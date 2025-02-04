@@ -13,6 +13,7 @@ generateColors();
 function generateColors() {
   colorContanierEls.forEach((containerEl) => {
     const newColorCode = randomColor();
+    console.log("Generated color:", newColorCode);
     containerEl.style.backgroundColor = "#" + newColorCode;
     containerEl.innerText = "#" + newColorCode;
     containerEl.addEventListener("click", () => {
