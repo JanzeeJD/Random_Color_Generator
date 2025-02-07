@@ -31,6 +31,8 @@ h1{
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border: solid black 2px;
   cursor: pointer;
+  transition: all 0.3s ease;
+
 }
 
 .color-container:hover {
