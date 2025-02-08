@@ -1,3 +1,5 @@
+const BLINK_SPEED = 300;
+
 const containerEl = document.querySelector(".container");
 
 for (let index = 0; index < 12; index++) {
@@ -39,7 +41,7 @@ function blinkBackground(color) {
   const interval = setInterval(() => {
     document.body.style.backgroundColor = shades[index];
     index = (index + 1) % shades.length;
-  }, 300); // Adjust the blinking speed to be slower
+  }, BLINK_SPEED); // Adjust the blinking speed to be slower
 
   setTimeout(() => {
     clearInterval(interval);
