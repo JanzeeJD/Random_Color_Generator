@@ -18,6 +18,10 @@ function generateColors() {
     console.log("Generated color:", newColorCode);
     containerEl.style.backgroundColor = "#" + newColorCode;
     containerEl.innerText = "#" + newColorCode;
+    if (parseInt(newColorCode, 16) > 0xcccccc) {
+      console.warn("Generated light color:", newColorCode);
+    }
+    
     containerEl.addEventListener("click", () => {
       blinkBackground("#" + newColorCode);
     });
