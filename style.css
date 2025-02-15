@@ -41,3 +41,11 @@ h1{
 .color-container:hover {
   opacity: 0.8;
 }
+
+@media (max-width: 600px) {
+  .color-container {
+    width: 150px;
+    height: 150px;
+  }
+}
+
