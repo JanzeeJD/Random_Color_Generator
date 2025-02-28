@@ -38,6 +38,7 @@ h1{
   letter-spacing: 1px;
   box-sizing: border-box;
   outline: none;
+  user-select: none;
 
 }
 
